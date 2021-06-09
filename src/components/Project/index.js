@@ -6,9 +6,9 @@ const Project = (props) => {
 
     return (
         <div>
-            <h3><a href="{project.repo}">{project.name}</a></h3>
-            <a href="{project.app}" target="_blank">
-                <img src={project.img} />
+            <h3><a href={project.repo} target="_blank" rel="noreferrer">{project.name}</a></h3>
+            <a href={project.app} target="_blank" rel="noreferrer">
+                <img src={project.img} alt={project.name} />
                 </a>
         </div>
     );
