@@ -1,8 +1,6 @@
 import React from 'react';
 
 function Navigation() {
-    /* const [currentSection, setCurrentSection] = useState(); */
-
     return (
         <nav>
             <ul>
