@@ -8,14 +8,31 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 
 function App() {
+  const [selectedSection, setSelectedSection] = useState("about");
+  const renderSession = () => {
+    if (selectedSection === "about") {
+      return <About />
+    } else if (selectedSection === "portfolio") {
+      return <Portfolio />
+    } else if (selectedSection === "contact") {
+      return <Contact />
+    } else if (selectedSection === "resume") {
+      return <Resume />
+    }
+    return <>
+      <About></About>
+      <Portfolio></Portfolio>
+      <Contact></Contact>
+      <Resume></Resume>
+    </>
+  }
   return (
     <div>
-      <Header></Header>
+      <Header
+        selectedSection={selectedSection}
+        setSelectedSection={setSelectedSection}></Header>
       <main>
-          <About></About>
-          <Portfolio></Portfolio>
-          <Contact></Contact>
-          <Resume></Resume>
+        {renderSession()}
       </main>
       <Footer></Footer>
     </div>

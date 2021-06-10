@@ -72,7 +72,7 @@ p {
 }
 
 a {
-  color: var(--link-color);
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: bold;
 }
@@ -175,14 +175,21 @@ header nav ul {
   align-items: center;
 }
 
-header nav ul li a {
+header nav ul li span {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 35px;
   margin: 0 10px;
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: bold;
 }
 
-header nav ul li a:hover {
+header nav ul li span:hover {
+  text-decoration: underline;
+}
+
+a:hover {
   text-decoration: underline;
 }
 

@@ -17,7 +17,7 @@ function Resume() {
                         <li>Node.js</li>
                     </ul>
                     </p>
-                    <p>Download my resume <a class="resume" href={resume} target="_blank" download rel="noreferrer">here</a></p>
+                    <p>Download my resume <a className="resume" href={resume} target="_blank" download rel="noreferrer">here</a></p>
             </div>
         </section>
     )

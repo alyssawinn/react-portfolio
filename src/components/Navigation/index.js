@@ -1,20 +1,25 @@
 import React from 'react';
 
-function Navigation() {
+function Navigation(props) {
+    const {
+        selectedSection,
+        setSelectedSection
+    } = props;
+
     return (
         <nav>
             <ul>
                 <li>
-                    <a href="#about">About</a>
+                    <span onClick={ () => setSelectedSection("about")}>About</span>
                 </li>
                 <li>
-                    <a href="#portfolio">Portfolio</a>
+                    <span onClick={ () => setSelectedSection("portfolio")}>Portfolio</span>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <span onClick={ () => setSelectedSection("contact")}>Contact</span>
                 </li>
                 <li>
-                    <a href="#resume">Resume</a>
+                    <span onClick={ () => setSelectedSection("resume")}>Resume</span>
                 </li>
             </ul>
         </nav>
