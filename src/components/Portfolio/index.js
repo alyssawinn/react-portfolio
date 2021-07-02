@@ -4,6 +4,12 @@ import Project from '../Project';
 function Portfolio() {
     const projects = [
         {
+            name: "Savannah's Sweets",
+            img: require('../../assets/sweets.PNG').default,
+            repo: 'https://github.com/Ryobia/Savannahs-Sweets',
+            app: 'https://dudley-doright-93373.herokuapp.com/',
+        },
+        {
             name: 'Plant Daddy',
             img: require('../../assets/plantdaddy.PNG').default,
             repo: 'https://github.com/alyssawinn/plant-daddy',
